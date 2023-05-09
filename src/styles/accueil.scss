@@ -1,0 +1,56 @@
+main{
+    height: 100vh;
+    background-color: #50b9a7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .top{
+        .logo-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo{
+                margin-bottom: 10px;
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .witch-user{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            button{
+                margin-top: 20px;
+                padding: 10px;
+                border: 1px solid rgb(255, 255, 255);
+                color: white;
+                border-radius: 10px;
+                width: 200px;
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        button{
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            color: white;
+            border-radius: 10px;
+            width: 200px;
+            font-weight: bold;
+        }
+    }
+}

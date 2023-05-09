@@ -1,0 +1,145 @@
+$gridColumn: 1;
+$color-start: #eaf2f8;
+$textColor: rgb(32, 32, 32);
+$confirm: rgb(108, 199, 108);
+
+body{
+  background: $color-start;
+  height:100vh;
+  color: black;
+}
+.agenda{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .month_of_remplas{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    hr{
+      border-top: 2px solid rgba(219, 219, 219, 0.647);
+      width: 89%;
+      right: 0;
+      color: #999;
+    }
+    span{
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.9em;
+      margin: 5px 0;
+      padding-left: 40px;
+    }
+  }
+
+  .next_remplas{
+    width: 100%;
+    padding: 10px;
+    padding-left: 2px;
+    margin-top: 5px;
+
+    .next_remplas_container{
+      display: flex;
+      flex-direction: column;
+
+      .card{
+        width: 98%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        color: $textColor;
+
+        .duration{
+            width: 15%;
+            height: 90%;
+
+            .start, .end{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .day{
+                font-size: 0.7em;
+              }
+              .day_nb{
+                font-size: 1.2em;
+              }
+            }
+          }
+ 
+          .intern_card{
+            height: 100%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 12px;
+            padding-left: 15px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            background-color: #f8fcff;
+            .intern_card_container{
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            .top{
+
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .drName{
+                font-weight: 700;
+              }
+              .state{
+                width: 100px;
+                font-size: 0.8em;
+                background: $confirm;
+                color: white;
+                padding: 0px 10px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .icon{
+                  // background-color: red;
+                }
+              }
+            }
+
+            .middle{
+              .info{
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8em;
+                font-weight: 400;
+              }
+            }
+
+            .bottom{
+              .location{
+                font-weight: 600;
+                font-size: 0.9emem;
+                margin-left: 5px;
+                span{
+                  margin-left: 10px;
+                }
+              }
+            }
+            }
+          }
+      }
+
+    }
+  }
+
+}
+
+
+
+

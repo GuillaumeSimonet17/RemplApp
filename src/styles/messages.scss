@@ -1,0 +1,66 @@
+.messagerie_container{
+    overflow: hidden;
+    background-color: #eaf2f8;
+    height: 100vh;
+
+    .new-mess-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        width: 160px;
+        padding: 15px 17px;
+        position: absolute;
+        bottom: 100px;
+        left: 12px;
+        border-radius: 50px;
+        background-color: #50b9a7;
+        color: white;
+        font-weight: 600;
+        font-size: 0.7em;
+
+        .icon{
+            font-size: 1.7em;
+        }
+    }
+
+    .messages-container{
+        height: calc(100vh - 80px);
+        padding: 50px 11px 70px 11px;
+
+        .message-card{
+            display: flex;
+            justify-content: space-between;
+            
+            .left{
+                display: flex;
+                align-items: center;
+                .icon{
+                    font-size: 3em;
+                    margin-right: 15px;
+                    color: #5e50b9;
+                }
+
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    .dr_name{font-weight: 700;  margin-bottom: 5px;}
+                    p{font-size: 0.8em;}
+                }
+            }
+
+            .right{
+                display: flex;
+                align-items: center;
+                color: grey;
+                font-size: 0.8em;
+            }
+        }
+
+        hr{
+            margin: 10px 0;
+        }
+    }
+
+
+}

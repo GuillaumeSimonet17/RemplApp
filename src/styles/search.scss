@@ -1,0 +1,142 @@
+$color-start: #eaf2f8;
+$color-end: transparent;
+$gradient: linear-gradient(to bottom, $color-start, $color-end);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.search-body{
+    height: 100%;
+    width: 100%;
+
+    .search-container{
+        position: fixed;
+        width: 100%;
+        height: 120px;
+        background-image: $gradient;
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+        .search-filters-link{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            height: 65px;
+            width: 90%;
+            margin-top: 40px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+            h3{
+                width: 80%;
+                font-size: 1.3em;
+                font-weight: bold;
+                color: black;
+            }
+            p{
+                color: grey;
+                width: 80%;
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    .content{
+        height: 100%;
+        box-sizing: border-box;
+        position: relative;
+        flex-grow: 2;
+        padding: 0 11px;
+        
+        .map-container{
+            // overflow: hidden;
+            position: absolute;
+            inset: 0;
+            .map{
+                height: 100%;
+                width: 100%;
+                transition: transform .6s cubic-bezier(.22,1,.36,1);
+                // overflow: hidden;
+            }
+        }
+        $max-top: 170px;
+        .results{
+            // z-index: 10;
+            position: absolute;
+            display: block;
+            left: 0;
+            right: 0;
+            padding-bottom: 20px;
+            top: 200px;
+            background-color: #eaf2f8;
+            transition: top .5s cubic-bezier(.22,1,.36,1);
+            min-height: 85%;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+
+            .handler-container{
+                width: 100%;
+                height: 33px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                .handler{
+                    width: 90%;
+                    height: 3px;
+                    background-color: rgb(209, 209, 209);
+                    margin: 0px 60px;
+                    margin-top: 10px;
+                    border-radius: 10px;
+                }
+            }
+            
+            .results-container{
+                height: 100%;
+                
+                .result-content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .filter-container{
+                        margin-top: 5px;
+                        height: 40px;
+                        width: 90%;
+                        background-color: white;
+                        border-radius: 20px;
+                        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        .filter{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 80%;
+                            .icon{
+                                color: rgb(112, 112, 112);
+
+                            }
+                            p{
+                                display: flex;
+                                align-items: center;
+                                // justify-content: center;
+                                color: grey;
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
