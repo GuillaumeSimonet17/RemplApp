@@ -1,4 +1,5 @@
 This project is a reproduction of a web site that links replacement and substitute doctors. It is not yet complete. I used Next.js and React.
+The primary goal was to change the page design according to the type of user (replacement or substitute).
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
