@@ -1,4 +1,4 @@
-This project is a reproduction of a web site that links replacement and substitute doctors. This project is not yet complete. I used Next.js and React.
+This project is a reproduction of a web site that links replacement and substitute doctors. It is not yet complete. I used Next.js and React.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
