@@ -1,3 +1,7 @@
+This project is a reproduction of a web site that links replacement and substitute doctors. This project is not yet complete. I used Next.js and React.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
